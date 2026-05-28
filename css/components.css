@@ -1,0 +1,907 @@
+/*-------------------------------------- Botões --------------------------------------*/
+
+/*-----!!----- Botão s/Fundo -----!!-----*/
+
+/*-------- Botão Primário --------*/
+.button-primary{
+    background-color: #ab0002;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px 24px;
+}
+
+/* Botão Primário - Hover */
+.button-primary:hover{
+    background-color: #860002;
+    color: #ffffff80;
+}
+
+/* Botão Primário - Desabilitado */
+.button-primary:disabled{
+    background-color: #ab000380;
+    color: #ffffff80;
+}
+
+/*-------- Botão Secundário --------*/
+.button-secundary{
+    background-color: transparent;
+    color: #516167;
+    border: 1px solid #516167;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Secundário - Hover */
+.button-secundary:hover{
+    color: #3a464a;
+    border: 1px solid #3a464a;
+}
+
+/* Botão Secundário - Desabilitado */
+.button-secundary:disabled{
+    color: #3a464a80;
+    border: 1px solid #3a464a80;
+}
+
+/*-------- Botão Terciário --------*/
+.button-tertiary{
+    background-color: transparent;
+    color: #ab0002;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Terciário - Hover */
+.button-tertiary:hover{
+    background-color: #ab0002;
+    color: #ffffff;
+}
+
+/* Botão Terciário - Desabilitado */
+.button-tertiary:disabled{
+    color: #ab000380;
+}
+
+/*-------- Botão Destrutivo --------*/
+.button-destructive{
+    background-color: #ee4c29;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Destrutivo - Hover */
+.button-destructive:hover{
+    background-color: #be3e21;
+    color: #ffffff80;
+}
+
+/* Botão Destrutivo - Desabilitado */
+.button-destructive:disabled{
+    background-color: #ee4d2980;
+    color: #ffffff80;
+}
+
+/*-----!!----- Botão c/Fundo -----!!-----*/
+
+/*-------- Botão Primário --------*/
+.button-primaryb{
+    background-color: #ffffff;
+    color: #ab0002;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Primário - Hover */
+.button-primaryb:hover{
+    background-color: #d5d5d5;
+    color: #ab000280;
+}
+
+/* Botão Primário - Desabilitado */
+.button-primaryb:disabled{
+    background-color: #ffffff80;
+    color: #ab000280;
+}
+
+/*-------- Botão Secundário --------*/
+.button-secundaryb{
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Secundário - Hover */
+.button-secundaryb:hover{
+    color: #d5d5d5;
+    border: 1px solid #d5d5d5;
+}
+
+/* Botão Secundário - Desabilitado */
+.button-secundaryb:disabled{
+    color: #ffffff80;
+    border: 1px solid #ffffff80;
+}
+
+/*-------- Botão Terciário --------*/
+.button-tertiaryb{
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Botão Terciário - Hover */
+.button-tertiaryb:hover{
+    background-color: #ffffff;
+    color: #ab0002;
+}
+
+/* Botão Terciário - Desabilitado */
+.button-tertiaryb:disabled{
+    color: #ffffff80;
+}
+
+/*-------------------------------------- Cards e Formulários --------------------------------------*/
+
+/*-----!!----- Hierarquia Tipográfica -----!!-----*/
+
+/* Títulos */
+.card h2 {
+    font-size: 28px;
+    color: #ab0002;
+    font-weight: bold;
+}
+
+/* Subtítulos */
+.card h3 {
+    font-size: 20px;
+    color: #516167;
+    font-weight: bold;
+}
+
+/* Contéudo */
+.card p {
+    font-size: 20px;
+    color: #516167;
+}
+
+/*-----!!----- Estrutura dos Cards e Formulários -----!!-----*/
+
+/*--- Card ---*/
+
+/* Borda e Estrutura*/
+.card {
+    display: flex;
+
+    margin: 20px;
+    padding: 40px;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Card Informativo */
+.content-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+/* Card de Vagas */
+
+/*-----!!----- Hierarquia Tipográfica -----!!-----*/
+
+/* Títulos */
+.card-vaga h2 {
+    font-size: 28px;
+    color: #ab0002;
+    font-weight: bold;
+}
+
+/* Subtítulos */
+.card-vaga h3 {
+    font-size: 20px;
+    color: #516167;
+    font-weight: bold;
+}
+
+/* Contéudo */
+.card-vaga p {
+    font-size: 20px;
+    color: #516167;
+    font-weight: bold;
+}
+
+/*--- Formulário ---*/
+
+/* Campo de Entrada de Dados */
+.card form #input {
+    color: #516167;
+    border: 1px solid #516167;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+/* Links para outras páginas */
+.card form #link {
+    color: #ab0002;
+    text-decoration: underline;
+}
+
+/*--- Inputs ---*/
+
+/* Checkbox Passivo */
+.checkbox-group input[type="checkbox"]{
+
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+
+    border: 2px solid #ab0002;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+    position: relative;
+
+    display: inline-block;
+}
+
+/* Checkbox Ativo */
+.checkbox-group input[type="checkbox"]:checked{
+    background-color: #ab0002;
+}
+
+.checkbox-group input[type="checkbox"]:checked::before{
+
+    content: "✓";
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Checkbox - Hover */
+.checkbox-group input[type="checkbox"]:hover{
+    border-color: #860002;
+}
+
+/* Checkbox - Texto */
+.checkbox-group label{
+    color: #516167;
+    cursor: pointer;
+}
+
+/*-------------------------------------- Edital de Vagas --------------------------------------*/
+
+/*-----!!----- Hierarquia Tipográfica -----!!-----*/
+
+/* Títulos 1 */
+.menu-edital h1 {
+    font-size: 40px;
+    color: #ab0002;
+    font-weight: bold;
+}
+
+/* Títulos 2 */
+.menu-edital h2 {
+    font-size: 28px;
+    color: #ab0002;
+    font-weight: bold;
+}
+
+/* Subtítulos */
+.menu-edital h3 {
+    font-size: 20px;
+    color: #516167;
+    font-weight: bold;
+}
+
+/* Contéudo */
+.menu-edital p {
+    font-size: 20px;
+    color: #516167;
+}
+
+/*-----!!----- Estrutura do Edital -----!!-----*/
+
+/*--- Menu do Edital ---*/
+
+.menu-edital{
+    width: 100%;
+
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 30px 40px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Linha superior */
+
+.topo-edital{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.topo-edital h1{
+    color: #ab0002;
+    font-size: 40px;
+}
+
+/* Área direita */
+
+.acoes-edital{
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+/* Pesquisa */
+
+.searchbox-edital{
+    width: 400px;
+    height: 50px;
+
+    background-color: #f3f3f3;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    gap: 15px;
+}
+
+.searchbox-edital input{
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 16px;
+
+    color: #516167;
+}
+
+/* Filtros */
+
+.filtros-edital{
+    display: flex;
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.filtros-edital select{
+    height: 50px;
+
+    padding: 0 20px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #516167;
+
+    cursor: pointer;
+}
+
+/* Linha */
+
+.linha-edital{
+    width: 100%;
+    height: 1px;
+
+    background-color: #e5e5e5;
+}
+
+/* Tags */
+
+.tags-edital{
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.tags-edital button{
+    background-color: #f3f3f3;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 10px 18px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #516167;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.tags-edital button:hover{
+    background-color: #ab0002;
+    color: #ffffff;
+}
+
+/* Cards de Vagas */
+
+.card-vaga {
+    display: flex;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.content-vaga {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-vaga a{
+    align-self: flex-end;
+}
+
+.img-vaga {
+    width: calc(100% + 80px);
+    height: 200px;
+
+    margin-left: -40px;
+    margin-right: -40px;
+
+    object-fit: cover;
+}
+
+/*-------------------------------------- Login e Cadastro --------------------------------------*/
+
+/* Página */
+
+.auth-page{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* Card */
+
+.auth-card{
+    width: 100%;
+    max-width: 500px;
+
+    background-color: #ffffff;
+
+    border-radius: 20px;
+
+    margin: auto;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auth-card h1{
+    color: #ab0002;
+    font-size: 40px;
+    text-align: left;
+}
+
+/* Abas */
+
+.auth-switch{
+    width: 100%;
+
+    display: flex;
+
+    background-color: #f2f2f2;
+
+    border-radius: 15px;
+
+    padding: 5px;
+
+    gap: 10px;
+}
+
+.auth-switch a{
+    flex: 1;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    color: #516167;
+
+    transition: 0.2s;
+}
+
+.auth-switch .active{
+    background-color: #ab0002;
+    color: #ffffff;
+}
+
+.auth-switch a:hover{
+    background-color: #d9d9d9;
+}
+
+/* Formulário */
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.auth-form label{
+    font-weight: bold;
+    color: #516167;
+}
+
+.auth-form input{
+    width: 100%;
+
+    padding: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #c5c5c5;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.auth-form input:focus{
+    border: 1px solid #ab0002;
+}
+
+.auth-form a{
+    color: #ab0002;
+}
+
+.auth-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.auth-link{
+    text-align: center;
+}
+
+.auth-link a{
+    color: #ab0002;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*-------------------------------------- Banner --------------------------------------*/
+
+.banner{
+    position: relative;
+
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.banner-img{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    background-color: black;
+}
+
+.banner-content{
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 50px;
+}
+
+/* Escurecimento */
+
+.banner::before{
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0);
+
+    z-index: 1;
+}
+
+/* Fundo circular da logo */
+
+#logobanner{
+    width: 300px;
+    height: 300px;
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    backdrop-filter: blur(10px);
+}
+
+/* Logo */
+
+#logobanner img{
+    width: 230px;
+}
+
+/*-------------------------------------- Cabeçalho (header) - Barra de Navegação --------------------------------------*/
+
+/* Menu */
+
+header nav{
+    display: flex;
+    gap: clamp(20px, 5vw, 120px);
+}
+
+header nav a{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: #ffffff80;
+}
+
+/* Ícones */
+
+.icons{
+    width: 40px;
+    cursor: pointer;
+}
+
+#logo{
+    width: 80px;
+    height: auto;
+}
+
+#perfil{
+    width: 40px;
+    height: auto;
+    fill: #ffffff;
+}
+
+#perfil:hover{
+    fill: #d5d5d5;
+}
+
+/* Campo de Pesquisa */
+
+.search-box{
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+
+    background-color: #ffffff;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+
+    gap: 15px;
+}
+
+.search-box input{
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+
+    color: #516167;
+
+    background-color: transparent;
+}
+
+#pesquisa{
+    width: 24px;
+}
+
+/*-------------------------------------- Rodapé (footer) --------------------------------------*/
+
+/*-----!!----- Hierarquia Tipográfica -----!!-----*/
+
+/* Títulos */
+footer h2 {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Subtítulos */
+footer h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Contéudo */
+footer p {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Link */
+footer a {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Links para outras páginas */
+footer .link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer .link:hover {
+    font-weight: bold;
+}
+
+/*-----!!----- Estrutura do Rodapé -----!!-----*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 50px;
+    padding: 50px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+footer .sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px;
+}
+
+footer .contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+}
