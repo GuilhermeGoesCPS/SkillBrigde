@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>SkillBridge | Cadastro - Empresa</title>
 	<link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/components.css">
@@ -14,36 +15,7 @@
 <body>
 
 <!-- Cabeçalho -->
-<header>
-    <!-- Logo -->
-    <a href="../index.html">
-    <img class="icons" id="logo"
-    src="../assets/logos/SkillBridge - Logo - Negativo.svg"
-    alt="Logo do SkillBrigde">
-    </a>
-
-    <!-- Pesquisa -->
-	<div class="search-box">
-        <img class="icons" id="pesquisa"
-        src="../assets/icons/Ícone - Pesquisa.svg"
-        alt="Ícone de pesquisa">
-
-        <input type="text" placeholder="Pesquise aqui...">
-    </div>
-    
-    <!-- Navegação -->
-    <nav>
-    <a class="tertiary" href="../index.html">HOME</a>
-    <a class="tertiary" href="edital.html">VAGAS</a>
-	</nav>
-
-    <!-- Perfil -->
-    <a href="login-aluno.html">
-    <img class="icons" id="perfil"
-    src="../assets/icons/Ícone - Usuário.svg"
-    alt="Ícone de perfil">
-    </a>
-</header>
+<header id="site-header" data-base="../"></header>
 
 <!-- Página -->
 <main class="auth-page">
@@ -64,60 +36,38 @@
         </div>
 
         <!-- Formulário -->
-        <form class="auth-form">
+        <form class="auth-form" id="form-cadastro" data-destino="login-empresa.html">
 
-            <label>Nome</label>
-            <input type="text" placeholder="Digite o nome da empresa.">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome da empresa." autocomplete="organization" required>
 
-            <label>E-mail</label>
-            <input type="email" placeholder="Digite o endereço de e-mail.">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite o endereço de e-mail." autocomplete="email" required>
 
-            <label>CNPJ</label>
-            <input type="text" placeholder="Digite o CNPJ da empresa.">
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ da empresa." autocomplete="username" required>
 
-            <label>Senha</label>
-            <input type="password" placeholder="Digite a sua senha">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" autocomplete="new-password" required>
 
-            <label>Confirmar Senha</label>
-            <input type="password" placeholder="Repita a sua senha">
+            <label for="confirmar-senha">Confirmar Senha</label>
+            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita a sua senha" autocomplete="new-password" required>
+
+            <button type="submit" class="button-primary">Cadastre-se</button>
         </form>
-
-        <a class="button-primary" href="login-aluno.html">Cadastre-se</a>
 
         <p class="auth-link">
             Já possui conta?
-            <a href="login-aluno.html">Entrar</a>
+            <a href="login-empresa.html">Entrar</a>
         </p>
     </section>
 </main>
 
 <!-- Rodapé -->
-<footer>
-    <!-- Sobre Nós -->
-	<div class="sobre">
-		<h2>Sobre Nós</h2>
-		<p>
-            O SkillBridge é uma plataforma digital que conecta estudantes do
-            Centro Paula Souza a oportunidades de estágio,aprendizagem e
-            emprego, facilitando a aproximação entre empresas e talentos em formação.
-        </p>
-    </div>
+<footer id="site-footer"></footer>
 
-    <!-- Links Úteis -->
-	<div class="links">
-        <h2>Links Úteis</h2>
-		<a class="link" href="#">FAQ</a>
-		<a class="link" href="#">Política de Privacidade</a>
-        <a class="link" href="#">Termos & Condições.</a>
-    </div>
-
-    <!-- Contate-nos -->
-	<div class="contatos">
-        <h2>Contate-nos</h2>
-		<p>skillbridge@gmail.com</p>
-		<p>(XX) XXXXX-XXXX</p>
-    </div>
-</footer>
+<script src="../js/main.js"></script>
+<script src="../js/cadastro.js"></script>
 
 </body>
 

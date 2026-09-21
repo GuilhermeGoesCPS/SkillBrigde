@@ -12,6 +12,10 @@
 
     text-decoration: none;
     padding: 10px 24px;
+
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
 }
 
 /* Botão Primário - Hover */
@@ -247,22 +251,6 @@
     font-weight: bold;
 }
 
-/*--- Formulário ---*/
-
-/* Campo de Entrada de Dados */
-.card form #input {
-    color: #516167;
-    border: 1px solid #516167;
-    border-radius: 10px;
-    background-color: transparent;
-}
-
-/* Links para outras páginas */
-.card form #link {
-    color: #ab0002;
-    text-decoration: underline;
-}
-
 /*--- Inputs ---*/
 
 /* Checkbox Passivo */
@@ -402,7 +390,8 @@
 /* Pesquisa */
 
 .searchbox-edital{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     height: 50px;
 
     background-color: #f3f3f3;
@@ -524,11 +513,11 @@
 }
 
 .img-vaga {
-    width: calc(100% + 80px);
+    width: calc(100% + 40px);
     height: 200px;
 
-    margin-left: -40px;
-    margin-right: -40px;
+    margin-left: -20px;
+    margin-right: -20px;
 
     object-fit: cover;
 }
@@ -652,10 +641,16 @@
     color: #ab0002;
 }
 
+.auth-form .button-primary{
+    margin-top: 10px;
+}
+
 .auth-options{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 
     font-size: 14px;
 }

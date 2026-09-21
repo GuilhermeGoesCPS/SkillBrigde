@@ -9,7 +9,7 @@
 
 .grid-vagas{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     padding: 40px;
     gap: 20px;
 }
@@ -144,5 +144,68 @@ footer{
 
     .banner{
         background-attachment: scroll;
+        height: 420px;
+    }
+
+    .banner-content h1{
+        text-align: center;
+    }
+
+    /* Títulos */
+    body h1,
+    .auth-card h1,
+    .menu-edital h1,
+    .topo-edital h1{
+        font-size: 32px;
+    }
+
+    /* Cabeçalho: logo, menu e perfil na primeira linha; pesquisa embaixo */
+    header{
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 20px;
+    }
+
+    header .search-box{
+        order: 3;
+        flex: 1 1 100%;
+        max-width: none;
+    }
+
+    header nav a{
+        font-size: 16px;
+    }
+
+    /* Cards, vagas e formulários */
+    .card{
+        margin: 15px;
+        padding: 24px 20px;
+    }
+
+    .grid-vagas{
+        padding: 20px;
+    }
+
+    .searchbox-edital{
+        max-width: none;
+    }
+
+    .auth-page{
+        padding: 20px 15px;
+    }
+
+    .auth-card{
+        padding: 24px 20px;
+    }
+
+    /* Rodapé */
+    footer{
+        padding: 30px 20px;
+    }
+
+    footer .sobre,
+    footer .links,
+    footer .contatos{
+        width: 100%;
     }
 }
