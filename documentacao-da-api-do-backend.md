@@ -2,7 +2,7 @@
 
 Esta documentação descreve os endpoints da API REST do SkillBridge, seus parâmetros, regras de acesso e respostas esperadas.
 
-Os endpoints públicos descritos abaixo estão implementados. Cadastro, login e operações protegidas são propostas de contrato e ainda precisam ser implementadas no backend.
+Os endpoints públicos, de cadastro/login e protegidos descritos abaixo estão implementados no backend.
 
 ## Convenções
 
@@ -15,7 +15,7 @@ Os endpoints públicos descritos abaixo estão implementados. Cadastro, login e 
 Authorization: Bearer <token>
 ```
 
-O token deve identificar o usuário autenticado, seu tipo de conta (`aluno`, `empresa` ou `instituicao`) e ter validade limitada. As permissões de cada endpoint protegido são verificadas a partir do token.
+O token deve identificar o usuário autenticado, seu tipo de conta (`aluno`, `empresa` ou `instituicao`) e tem validade de uma hora. As permissões de cada endpoint protegido são verificadas a partir do token.
 
 ## Endpoints públicos implementados
 
@@ -77,7 +77,7 @@ Retorna os dados da instituição identificada por `{id}`.
 
 Retorna alunos associados a pelo menos uma das tags informadas. A busca exige um ou mais IDs de tag separados por vírgula.
 
-## Cadastro e login planejados
+## Cadastro e login
 
 Cadastro e login não exigem token. Cada rota de login aceita somente contas do tipo indicado no caminho.
 
@@ -168,9 +168,9 @@ Resposta: `200 OK`. O exemplo abaixo mostra o retorno para uma conta de aluno; o
 
 Credenciais inválidas ou incompatíveis com o tipo de conta retornam `401 Unauthorized`.
 
-## Endpoints protegidos planejados
+## Endpoints protegidos
 
-Todos os endpoints desta seção exigirão o cabeçalho `Authorization: Bearer <token>` após serem implementados.
+Todos os endpoints desta seção exigem o cabeçalho `Authorization: Bearer <token>`.
 
 ### Conta do usuário
 
@@ -231,7 +231,7 @@ Se não houver candidaturas, `alunosIds` será uma lista vazia. Uma vaga inexist
 
 ## Códigos de resposta
 
-Os códigos abaixo descrevem as respostas esperadas para o contrato da API. Os endpoints planejados devem adotá-los quando forem implementados.
+Os códigos abaixo descrevem as respostas da API.
 
 - `400 Bad Request`: corpo, parâmetro ou filtro inválido; ou campo obrigatório ausente.
 - `401 Unauthorized`: token ausente, inválido ou expirado, ou credenciais de login inválidas.

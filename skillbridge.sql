@@ -6,7 +6,7 @@ create table usuarios(
     id int primary key auto_increment,
     nome varchar(50) not null,
     email varchar(100) not null unique,
-    senha blob(128) not null comment "sha512",
+    senha blob(128) not null comment "PBKDF2-SHA512: 16-byte salt + 64-byte derived key",
     descricao longtext,
     endereco text not null,
     contato text
