@@ -22,7 +22,7 @@ export class AppService {
       descricao: 'API pública da plataforma SkillBridge.',
       endpoints: [
         'GET /api', 'GET /api/vagas', 'GET /api/vagas/:id', 'GET /api/vagas?tags=1,2,3',
-        'GET /api/tags', 'GET /api/tags?categorias=1,2,3', 'GET /api/categorias',
+        'GET /api/tags', 'GET /api/tags?categorias=1,2,3', 'GET /api/categorias', 'GET /api/cursos',
         'GET /api/empresas', 'GET /api/empresas/:id', 'GET /api/instituicoes',
         'GET /api/instituicoes/:id', 'GET /api/alunos?tags=1,2,3',
         'POST /api/cadastro/aluno', 'POST /api/cadastro/empresa', 'POST /api/cadastro/instituicao',
@@ -80,6 +80,10 @@ export class AppService {
        FROM tags t ${filter} ORDER BY t.id`,
       categoryIds ? [categoryIds] : [],
     );
+  }
+
+  getCursos() {
+    return this.rows('SELECT id, nome FROM cursos ORDER BY nome');
   }
 
   getCategorias() {

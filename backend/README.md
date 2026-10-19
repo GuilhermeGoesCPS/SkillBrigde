@@ -47,6 +47,7 @@ Inicie em modo de desenvolvimento com `npm run start:dev`.
 - `GET /api/vagas` e `GET /api/vagas/:id`: vagas; aceita `?tags=1,2,3` para filtrar por qualquer uma das tags informadas.
 - `GET /api/tags`: tags; aceita `?categorias=1,2,3` para filtrar por categoria.
 - `GET /api/categorias`: categorias cadastradas.
+- `GET /api/cursos`: cursos disponíveis para cadastro de aluno.
 - `GET /api/empresas` e `GET /api/empresas/:id`: empresas e dados públicos do usuário associado.
 - `GET /api/instituicoes` e `GET /api/instituicoes/:id`: instituições e dados públicos do usuário associado.
 - `GET /api/alunos?tags=1,2,3`: alunos que possuem ao menos uma das tags informadas; o filtro é obrigatório.

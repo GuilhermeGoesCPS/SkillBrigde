@@ -53,6 +53,12 @@ export class AppController {
     return this.appService.getTags(categorias);
   }
 
+  @Get('cursos')
+  @Public()
+  getCursos() {
+    return this.appService.getCursos();
+  }
+
   @Get('categorias')
   @Public()
   getCategorias() {

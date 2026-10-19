@@ -53,6 +53,10 @@ Filtra tags por um ou mais IDs de categoria separados por vírgula. São retorna
 
 Retorna todas as categorias cadastradas.
 
+#### `GET /api/cursos`
+
+Retorna os cursos disponíveis para selecionar durante o cadastro de aluno.
+
 ### Empresas e instituições
 
 #### `GET /api/empresas`

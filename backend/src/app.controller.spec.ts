@@ -12,7 +12,13 @@ describe('AppController', () => {
     const app: TestingModule = await Test.createTestingModule({
       controllers: [AppController],
       providers: [
-        { provide: AppService, useValue: { getInfo: () => ({ nome: 'SkillBridge API', versao: '1.0.0' }) } },
+        {
+          provide: AppService,
+          useValue: {
+            getInfo: () => ({ nome: 'SkillBridge API', versao: '1.0.0' }),
+            getCursos: () => [{ id: 1, nome: 'Desenvolvimento de Sistemas' }],
+          },
+        },
         { provide: AuthService, useValue: {} },
       ],
     }).compile();
@@ -23,6 +29,12 @@ describe('AppController', () => {
   describe('GET /api', () => {
     it('returns public API information', () => {
       expect(appController.getInfo()).toEqual({ nome: 'SkillBridge API', versao: '1.0.0' });
+    });
+  });
+
+  describe('GET /api/cursos', () => {
+    it('returns courses available to the registration form', () => {
+      expect(appController.getCursos()).toEqual([{ id: 1, nome: 'Desenvolvimento de Sistemas' }]);
     });
   });
 });
