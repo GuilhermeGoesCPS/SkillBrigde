@@ -20,225 +20,29 @@
 <!-- Página -->
 <main>
     <section class="menu-edital">
-
-    <!-- Linha superior -->
-    <div class="topo-edital">
-
-        <!-- Título -->
-        <h1>Edital de Vagas</h1>
-
-        <!-- Área direita -->
-        <div class="acoes-edital">
-
-            <!-- Pesquisa -->
-            <div class="searchbox-edital">
-                <img class="icons" id="pesquisa-edital"
-                src="../assets/icons/icone-pesquisa.svg"
-                alt="Ícone de pesquisa">
-
-                <input type="text" placeholder="Pesquisar vagas...">
-            </div>
-
-            <!-- Filtros -->
-            <div class="filtros-edital">
-
-                <select>
-                    <option>Todas as áreas</option>
-                    <option>Front-End</option>
-                    <option>Back-End</option>
-                    <option>Mobile</option>
-                    <option>Design</option>
-                </select>
-
-                <select>
-                    <option>Tipo de vaga</option>
-                    <option>Estágio</option>
-                    <option>Jovem Aprendiz</option>
-                    <option>CLT</option>
-                </select>
-
+        <div class="topo-edital">
+            <div><p class="eyebrow-vaga">OPORTUNIDADES</p><h1>Edital de Vagas</h1></div>
+            <div class="acoes-edital">
+                <div class="searchbox-edital"><img class="icons" id="pesquisa-edital" src="../assets/icons/icone-pesquisa.svg" alt=""><input id="busca-vagas" type="search" placeholder="Pesquisar vagas..." aria-label="Pesquisar vagas"></div>
+                <div class="filtros-edital">
+                    <select id="filtro-categoria" aria-label="Filtrar por área"><option value="">Carregando áreas...</option></select>
+                    <select id="filtro-tipo" aria-label="Filtrar por tipo"><option value="">Todos os tipos</option></select>
+                </div>
             </div>
         </div>
-    </div>
-
-    <!-- Linha divisória -->
-    <div class="linha-edital"></div>
-
-    <!-- Tags -->
-    <div class="tags-edital">
-        <button>HTML</button>
-        <button>CSS</button>
-        <button>JavaScript</button>
-        <button>React</button>
-        <button>Node.js</button>
-        <button>SQL</button>
-        <button>UX/UI</button>
-        <button>Flutter</button>
-    </div>
-</section>
-
-    <section class="grid-vagas">
-        <!-- Cards de Vagas -->
-        <!-- Teste 1 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Desenvolvedor Front-End</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Empresa procura alunos com conhecimento em HTML, CSS e JavaScript.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 2 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Estágio em Back-End</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Oportunidade para estudantes com interesse em APIs,
-                banco de dados e lógica de programação utilizando Node.js.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 3 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Jovem Aprendiz em Tecnologia</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Programa voltado para jovens interessados em
-                suporte técnico, manutenção de computadores e atendimento interno.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 4 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Desenvolvedor Full Stack Jr.</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Empresa busca alunos com conhecimentos em front-end
-                e back-end para desenvolvimento de sistemas web completos.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 5 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Estágio em UX/UI Design</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Vaga destinada a estudantes criativos com interesse
-                em prototipação, experiência do usuário e design de interfaces.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 6 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Analista de Suporte Técnico</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Atuação em atendimento de chamados, suporte
-                a usuários e manutenção básica de sistemas corporativos.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-        </section>
-
-        <!-- Teste 7 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Estágio em Banco de Dados</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Oportunidade para estudantes com conhecimentos em SQL
-                e modelagem de dados para auxiliar na organização de informações.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 8 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Desenvolvedor Mobile</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Empresa procura alunos interessados no desenvolvimento
-                de aplicativos Android utilizando Flutter ou React Native.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 9 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Jovem Aprendiz Administrativo em TI</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Auxílio em processos administrativos do setor de tecnologia
-                e organização de documentação técnica.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 10 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Estágio em Segurança da Informação</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Vaga para estudantes interessados em segurança digital,
-                análise de vulnerabilidades e proteção de dados.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 11 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Desenvolvedor Java Jr.</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Oportunidade para atuar no desenvolvimento e manutenção
-                de sistemas utilizando Java e Spring Boot.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
-
-        <!-- Teste 12 -->
-        <section class="card-vaga">
-            <div class="content-vaga">
-            <h2>Estágio em QA/Testes</h2>
-            <img class="img-vaga" src="../assets/images/imagem-vaga.png" alt="Imagem da Vaga">
-            <p>
-                Auxílio na criação de testes funcionais e identificação
-                de falhas em aplicações web e mobile.
-            </p>
-            <a class ="button-primary" href="#">Visualizar</a>
-            </div>
-        </section>
+        <div class="linha-edital"></div>
+        <div id="filtros-tags" class="tags-edital" aria-label="Filtrar por competência"></div>
     </section>
+    <section class="results-heading"><p id="quantidade-vagas" aria-live="polite"></p><p id="mensagem-vagas" class="status-message" role="status" hidden></p></section>
+    <section id="lista-vagas" class="grid-vagas" aria-live="polite"></section>
 </main>
 
 <!-- Rodapé -->
 <footer id="site-footer"></footer>
 
+<script src="../js/api.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/filtros.js"></script>
 
 </body>
 

@@ -208,4 +208,23 @@ footer{
     footer .contatos{
         width: 100%;
     }
+
+    .data-page{
+        padding: 24px 15px 40px;
+    }
+
+    .data-form,
+    .profile-fields{
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .results-heading{
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .auth-switch a{
+        font-size: 12px;
+    }
 }

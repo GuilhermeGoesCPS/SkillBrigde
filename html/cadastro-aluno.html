@@ -33,10 +33,14 @@
         <a href="cadastro-empresa.html">
             Empresa
         </a>
+
+        <a href="cadastro-instituicao.html">
+            Instituição
+        </a>
         </div>
 
         <!-- Formulário -->
-        <form class="auth-form" id="form-cadastro" data-destino="login-aluno.html">
+        <form class="auth-form" id="form-cadastro" data-destino="login-aluno.html" data-tipo="aluno">
 
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo." autocomplete="name" required>
@@ -44,16 +48,40 @@
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="email" required>
 
-            <label for="matricula">Matrícula</label>
-            <input type="text" id="matricula" name="matricula" placeholder="Digite a sua matrícula." autocomplete="username" required>
+            <label for="ra">RA</label>
+            <input type="text" id="ra" name="ra" placeholder="13 dígitos, somente números." inputmode="numeric" pattern="[0-9]{13}" minlength="13" maxlength="13" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" autocomplete="street-address" required>
+
+            <label for="periodo">Período</label>
+            <select id="periodo" name="periodo" required>
+                <option value="">Selecione</option>
+                <option value="1">1º</option><option value="2">2º</option><option value="3">3º</option>
+                <option value="4">4º</option><option value="5">5º</option><option value="6">6º</option>
+                <option value="7">7º</option><option value="8">8º</option><option value="9">9º</option>
+            </select>
+
+            <label for="cursoId">Curso</label>
+            <select id="cursoId" name="cursoId" required><option value="">Carregando cursos...</option></select>
+
+            <label for="instituicaoId">Instituição</label>
+            <select id="instituicaoId" name="instituicaoId" required><option value="">Carregando instituições...</option></select>
+
+            <label for="descricao">Sobre você</label>
+            <textarea id="descricao" name="descricao" rows="3"></textarea>
+
+            <label for="contato">Contato</label>
+            <input type="text" id="contato" name="contato" autocomplete="tel">
 
             <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite a sua senha" autocomplete="new-password" required>
+            <input type="password" id="senha" name="senha" placeholder="Mínimo de 10 caracteres" autocomplete="new-password" minlength="10" required>
 
             <label for="confirmar-senha">Confirmar Senha</label>
             <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita a sua senha" autocomplete="new-password" required>
 
             <button type="submit" class="button-primary">Cadastre-se</button>
+            <p id="mensagem-formulario" class="status-message" role="status" hidden></p>
         </form>
 
         <p class="auth-link">
@@ -66,6 +94,7 @@
 <!-- Rodapé -->
 <footer id="site-footer"></footer>
 
+<script src="../js/api.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/cadastro.js"></script>
 

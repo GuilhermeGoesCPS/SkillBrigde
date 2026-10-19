@@ -18,14 +18,23 @@
 <header id="site-header" data-base="../"></header>
 
 <!-- Página -->
-<main>
-
+<main class="data-page">
+	<section class="profile-panel talent-search">
+		<p class="eyebrow-vaga">BANCO DE TALENTOS</p>
+		<h1>Encontre estudantes</h1>
+		<p>Filtre por uma ou mais competências.</p>
+		<div id="filtros-talentos" class="tag-select-list"></div>
+		<p id="mensagem-talentos" class="status-message" role="status" hidden></p>
+	</section>
+	<section id="lista-talentos" class="talent-list" aria-live="polite"></section>
 </main>
 
 <!-- Rodapé -->
 <footer id="site-footer"></footer>
 
+<script src="../js/api.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/talentos.js"></script>
 
 </body>
 

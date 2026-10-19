@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge | Login - Instituição</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header id="site-header" data-base="../"></header>
+<main class="auth-page">
+    <section class="auth-card">
+        <h1>Login</h1>
+        <div class="auth-switch">
+            <a href="login-aluno.html">Aluno</a>
+            <a href="login-empresa.html">Empresa</a>
+            <a class="active" href="login-instituicao.html">Instituição</a>
+        </div>
+        <form class="auth-form" id="form-login" data-tipo="instituicao">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="username" required>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" autocomplete="current-password" required>
+            <div class="auth-options">
+                <div class="checkbox-group"><input type="checkbox" id="remember" name="lembrar"><label for="remember">Lembrar de mim</label></div>
+            </div>
+            <button type="submit" class="button-primary">Acessar</button>
+            <p id="mensagem-formulario" class="status-message" role="status" hidden></p>
+        </form>
+        <p class="auth-link">Não possui conta? <a href="cadastro-instituicao.html">Cadastre-se</a></p>
+    </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="../js/api.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/login.js"></script>
+</body>
+</html>

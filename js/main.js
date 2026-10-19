@@ -17,7 +17,21 @@
 (function () {
     "use strict";
 
-    const cabecalhoHTML = (base) => `
+    const cabecalhoHTML = (base) => {
+        const sessao = window.SkillBridge?.session();
+        const usuario = sessao?.usuario;
+        const links = usuario?.tipo === "empresa"
+            ? `<a href="${base}html/talentos.html">TALENTOS</a><a href="${base}html/perfil.html">PERFIL</a>`
+            : usuario
+                ? `<a href="${base}html/perfil.html">MEU PERFIL</a>`
+                : `<a href="${base}html/login-aluno.html">ENTRAR</a>`;
+        const perfil = usuario
+            ? `<button class="header-logout" type="button" data-logout>Sair</button>`
+            : `<a href="${base}html/login-aluno.html" aria-label="Entrar ou acessar perfil">
+                <img class="icons" id="perfil" src="${base}assets/icons/icone-usuario.svg" alt="Ícone de perfil">
+            </a>`;
+
+        return `
     <!-- Logo -->
     <a href="${base}index.html">
         <img class="icons" id="logo"
@@ -30,22 +44,19 @@
         <img class="icons" id="pesquisa"
         src="${base}assets/icons/icone-pesquisa.svg"
         alt="Ícone de pesquisa">
-        <input type="text" placeholder="Pesquise aqui..." aria-label="Pesquisar">
+        <input type="search" placeholder="Pesquise aqui..." aria-label="Pesquisar vagas" data-busca-global>
     </div>
 
     <!-- Navegação -->
     <nav>
         <a href="${base}index.html">HOME</a>
         <a href="${base}html/edital.html">VAGAS</a>
+        ${links}
     </nav>
 
-    <!-- Perfil -->
-    <a href="${base}html/login-aluno.html">
-        <img class="icons" id="perfil"
-        src="${base}assets/icons/icone-usuario.svg"
-        alt="Ícone de perfil">
-    </a>
+    ${perfil}
     `;
+    };
 
     const rodapeHTML = `
     <!-- Sobre Nós -->
@@ -75,7 +86,20 @@
     `;
 
     const cabecalho = document.getElementById("site-header");
-    if (cabecalho) cabecalho.innerHTML = cabecalhoHTML(cabecalho.dataset.base || "");
+    if (cabecalho) {
+        const base = cabecalho.dataset.base || "";
+        cabecalho.innerHTML = cabecalhoHTML(base);
+        cabecalho.querySelector("[data-logout]")?.addEventListener("click", () => {
+            window.SkillBridge?.clearSession();
+            window.location.href = `${base}index.html`;
+        });
+        cabecalho.querySelector("[data-busca-global]")?.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" && event.currentTarget.value.trim()) {
+                const query = encodeURIComponent(event.currentTarget.value.trim());
+                window.location.href = `${base}html/edital.html?q=${query}`;
+            }
+        });
+    }
 
     const rodape = document.getElementById("site-footer");
     if (rodape) rodape.innerHTML = rodapeHTML;

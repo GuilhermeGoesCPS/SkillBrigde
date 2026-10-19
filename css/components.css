@@ -633,6 +633,281 @@
     outline: none;
 }
 
+.auth-form select,
+.auth-form textarea,
+.data-form input,
+.data-form select,
+.data-form textarea{
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #263238;
+    font-size: 16px;
+}
+
+.auth-form textarea,
+.data-form textarea{
+    resize: vertical;
+}
+
+.auth-card .auth-switch a{
+    padding: 10px 6px;
+    font-size: 14px;
+}
+
+.status-message{
+    padding: 12px 14px;
+    border-left: 4px solid #ab0002;
+    background: #fff1f1;
+    color: #512222;
+    font-size: 15px;
+}
+
+.status-message[data-tipo="success"]{
+    border-color: #28734a;
+    background: #edf8f0;
+    color: #17472c;
+}
+
+.status-message[data-tipo="info"]{
+    border-color: #426d84;
+    background: #eff6f9;
+    color: #25495b;
+}
+
+.status-message[hidden]{
+    display: none;
+}
+
+.data-page{
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding: 36px 24px 64px;
+    color: #263238;
+    font-size: 16px;
+}
+
+.data-page > .status-message{
+    margin-bottom: 18px;
+}
+
+.detail-panel,
+.profile-panel,
+.talent-row{
+    padding: clamp(20px, 4vw, 40px);
+    border: 1px solid #d4d9dc;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.detail-panel h1,
+.profile-panel h1,
+.profile-panel h2,
+.talent-search h1{
+    margin: 8px 0 18px;
+    color: #ab0002;
+}
+
+.back-link{
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #516167;
+    font-size: 15px;
+}
+
+.eyebrow-vaga{
+    color: #28734a;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.empresa-vaga{
+    color: #516167;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.detail-description{
+    max-width: 75ch;
+    margin: 28px 0;
+    line-height: 1.65;
+    white-space: pre-wrap;
+}
+
+.detail-facts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+    padding: 20px 0;
+    border-top: 1px solid #e1e5e7;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.detail-facts dt{
+    color: #66747a;
+    font-size: 13px;
+}
+
+.detail-facts dd{
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+.tag-list,
+.tag-select-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag-list span,
+.tag-option{
+    padding: 7px 10px;
+    border-radius: 4px;
+    background: #edf2ef;
+    color: #315344;
+    font-size: 13px;
+}
+
+.detail-panel > #acao-candidatura{
+    margin-top: 30px;
+}
+
+.data-form{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    margin-top: 20px;
+}
+
+.data-form label,
+.profile-fields legend{
+    align-self: end;
+    color: #516167;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.data-form textarea,
+.data-form fieldset,
+.data-form button{
+    grid-column: 1 / -1;
+}
+
+.data-form button{
+    justify-self: start;
+}
+
+.profile-panel + .profile-panel{
+    margin-top: 22px;
+}
+
+.profile-fields{
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    padding: 18px;
+    border: 1px solid #d4d9dc;
+}
+
+.profile-fields legend{
+    padding: 0 8px;
+}
+
+.tag-option{
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.tag-option input{
+    accent-color: #ab0002;
+}
+
+.application-row,
+.talent-row{
+    margin-top: 12px;
+}
+
+.application-row{
+    padding: 16px 0;
+    border-bottom: 1px solid #d4d9dc;
+}
+
+.application-row h3{
+    margin-bottom: 8px;
+    color: #ab0002;
+}
+
+.application-row p,
+.talent-row p{
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+.talent-list{
+    margin-top: 20px;
+}
+
+.empty-state{
+    grid-column: 1 / -1;
+    padding: 32px 20px;
+    color: #516167;
+    text-align: center;
+}
+
+.results-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 0 40px;
+    color: #516167;
+    font-size: 15px;
+}
+
+.tag-filter[aria-pressed="true"]{
+    background: #ab0002;
+    color: #ffffff;
+}
+
+.header-logout{
+    padding: 8px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-logout:hover{
+    background: #ffffff;
+    color: #ab0002;
+}
+
+.grid-vagas .card-vaga{
+    width: 100%;
+    max-width: none;
+    align-items: stretch;
+    border-radius: 8px;
+}
+
+.grid-vagas .content-vaga{
+    width: 100%;
+    align-items: flex-start;
+}
+
+.grid-vagas .content-vaga .button-primary{
+    align-self: flex-start;
+}
+
 .auth-form input:focus{
     border: 1px solid #ab0002;
 }
