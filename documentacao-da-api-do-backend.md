@@ -98,11 +98,13 @@ Cria uma conta de aluno e seu perfil. O cadastro recebe os dados do usuário e o
   "descricao": "Estudante de desenvolvimento",
   "contato": "ana@example.com",
   "ra": "2026000000001",
-  "periodo": "2",
+  "periodo": "m",
   "cursoId": 1,
   "instituicaoId": 1
 }
 ```
+
+O campo `periodo` aceita `m` (manhã), `t` (tarde) ou `n` (noite).
 
 Resposta: `201 Created`, com os dados públicos da conta. A senha não é incluída.
 

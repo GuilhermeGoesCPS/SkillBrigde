@@ -49,7 +49,7 @@ export class RegisterStudentDto extends RegisterBaseDto {
   ra!: string;
 
   @IsString()
-  @Matches(/^[1-9]$/)
+  @Matches(/^[mtn]$/)
   periodo!: string;
 
   @IsInt()
@@ -114,7 +114,7 @@ export class UpdateUserDto {
 
   @IsOptional()
   @IsString()
-  @Matches(/^[1-9]$/)
+  @Matches(/^[mtn]$/)
   periodo?: string;
 
   @IsOptional()

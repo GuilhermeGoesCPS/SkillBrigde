@@ -1,4 +1,17 @@
-# React + TypeScript + Vite
+# SkillBridge Frontend
+
+Aplicação React que consome a API NestJS do SkillBridge.
+
+Copie `.env.example` para `.env.local` e configure `VITE_API_URL` com a URL base da API, incluindo `/api`. Para desenvolvimento local, use `http://localhost:3000/api`; no Codespaces, use a URL encaminhada da porta do NestJS, também terminando em `/api`.
+
+Instale as dependências e inicie o Vite:
+
+```bash
+npm install
+npm run dev
+```
+
+## Vite + React + TypeScript
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 

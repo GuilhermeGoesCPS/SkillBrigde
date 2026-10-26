@@ -25,7 +25,7 @@
 
 API REST pública da plataforma SkillBridge, implementada com NestJS e MySQL.
 
-Importe o schema `skillbridge.sql` no MySQL. O Nest carrega automaticamente o arquivo `.env` na raiz do backend; as mesmas configurações também podem ser fornecidas pelo ambiente:
+Na raiz do repositorio, execute `node setup.mjs` para instalar dependencias, criar/configurar o banco e aplicar o schema `skillbridge.sql` sem apagar dados existentes. O Nest carrega automaticamente o arquivo `.env` na raiz do backend; as mesmas configurações também podem ser fornecidas pelo ambiente:
 
 | Variável | Padrão |
 | --- | --- |

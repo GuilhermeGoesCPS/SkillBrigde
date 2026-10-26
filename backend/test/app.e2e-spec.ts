@@ -36,6 +36,22 @@ describe('AppController (e2e)', () => {
     return request(app.getHttpServer()).post('/api/cadastro/empresa').send({}).expect(400);
   });
 
+  it('/api/cadastro/aluno (POST) rejects numeric periods', () => {
+    return request(app.getHttpServer())
+      .post('/api/cadastro/aluno')
+      .send({
+        nome: 'Ana Silva',
+        email: 'ana@example.com',
+        senha: 'senha-forte-123',
+        endereco: 'Rua Exemplo, 123',
+        ra: '2026000000001',
+        periodo: '2',
+        cursoId: 1,
+        instituicaoId: 1,
+      })
+      .expect(400);
+  });
+
   afterEach(async () => {
     await app.close();
   });
